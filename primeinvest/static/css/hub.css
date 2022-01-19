@@ -1,0 +1,192 @@
+.fusion-join-steps {
+  margin: 2rem 0;
+}
+
+.fusion-join-steps h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.fusion-join-steps p {
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.fusion-join-steps ol {
+  list-style-type: decimal;
+  font-size: 1.6rem;
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.fusion-join-steps li {
+  margin: 2rem;
+  background-color: var(--bg);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.fusion-form {
+  margin: 2rem 0;
+  margin-top: 4r;
+  max-width: 70rem;
+  background-color: var(--bg);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.fusion-form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.small-info {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  line-height: 1.4;
+}
+
+.form-group-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 0 0 48%;
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.form-group input {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: .5rem;
+  font-family: inherit;
+}
+
+.fusion-form [type=submit] {
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background-color: var(--secondary);
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-family: inherit;
+}
+
+@media only screen and (max-width: 450px) {
+  .form-group-group {
+    display: block;
+    justify-content: space-between;
+  }
+}
+
+/* Fusion Dashboard */
+.trade-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.trade-balance {
+  background: rgb(3,17,46);
+  background-image: linear-gradient(102deg, rgba(3,21,61,1) 0%, rgb(57, 5, 148) 100%), url();
+  padding: 2rem;
+  color: white;
+  flex: 0 0 49%;
+  border-radius: 2rem;
+}
+
+.trade-type {
+  font-size: 2rem;
+}
+
+.trade-amount {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+.trade-info-details {
+  font-size: 1.4rem;
+}
+
+.info-list {
+  margin: 4rem 0;
+}
+
+.info-listings {
+  background-color: var(--bg);
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem
+}
+
+@media only screen and (max-width: 700px){
+  .trade-info {
+    display: block;
+  }
+  
+  .trade-balance {
+    margin-bottom: 3rem;  
+  }
+  
+}
+
+/* Payment page */
+.f-info-heading {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.f-info {
+  margin: .8rem 0;
+  font-size: 1.4rem;
+}
+
+.trade-details {
+  background-color: var(--bg);
+  font-size: 1.6rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.trade-details h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.trade-detail {
+  margin: .8rem 0;
+}
+
+.returnslist {
+  margin: 2rem 0;
+}
+.returnslist h3 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  font-weight: 400;
+}
+
+.returnslist p {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}

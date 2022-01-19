@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+<head>
+  <link rel="stylesheet" href="{% static 'css/pages.css' %}">
+  <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+</head>
+
+<div class="billboard2">
+  <p class="bill-content">Contact Us</p>
+</div>
+
+<div class="contact-us-section">
+  <div class="contact_form">
+    <h2 class="contact-heading">How Can we help</h2>
+    <form class="contact-form" action="{% url 'contact' %}" method="POST">
+
+      {% csrf_token %}
+  
+      <label for="Name">Full Name:</label><br>
+      <input type="text" name="name" placeholder="John Doe" required><br>
+  
+      <label for="Email">Email:</label><br>
+      <input type="email" name="email" placeholder="example@mail.com" required><br>
+  
+      <label for="phone">Phone Number:</label><br>
+      <input type="number" name="phone" placeholder="With country code" required><br>
+  
+      <label for="message">Message:</label><br>
+      <textarea type="text" name="message" class="text-area"  placeholder="Message" required></textarea> <br><br>
+  
+      <input class="btn btn-cta" type="submit" value="Send Message">
+    </form>
+  </div>
+  
+  <div class="contact_details">
+    <h2 class="contact-heading">Contacts</h2>
+    <p class="info">Send us an email and we'll get back to you as fast as possible</p>
+
+    <div class="contact-details">
+      <p><strong>Phone</strong> : +1 (281) 962-4558</p>
+      <p>Email: contact@fusionhub.com</p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

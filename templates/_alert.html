@@ -1,0 +1,31 @@
+{% if messages %}
+
+<head>
+  <style>
+    #messages {
+      font-size: 1.6rem;
+      margin: 1rem auto;
+      text-align: center;
+      color: #F7921A;
+      border: 1px solid white;
+      width: max-content;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<div id="messages">
+    {% for message in messages %}
+    <span class="message">
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+            ERROR:
+        {% else %}
+            {{ message.tags|title }}
+        {% endif %}
+    </span>
+    {{message}}
+
+    {% endfor %}
+</div>
+{% endif %}

@@ -1,0 +1,145 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content%}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/account.css' %}">
+  <link rel="stylesheet" href="{% static 'css/hub.css' %}">
+</head>
+
+<h1 class="dash-heading">
+  Fusion Hub 
+</h1>
+
+{% if user.fusion.deposit == "" %}
+<!-- Not Meber of Fusion Hub -->
+<section class="non-members">
+  <p class="dash-info">
+    You are not a Member of Fusion Hub.
+    <a href="{% url 'profile' %}">What is Fusion Hub?</a>
+    <br> 
+  </p>
+
+  <div class="fusion-join-steps">
+    <!-- <h2>Join Fusion Hub</h2> -->
+    <p>Folow these 3 Simple steps to join Fusion</p>
+    <ol>
+      <li style="font-weight: bold;">Fill the Bio Form</li>
+      <li>Select a Fusion Hub Active Plan</li>
+      <li>Access the Hub </li>
+    </ol>
+  </div>
+
+  <div class="fusion-form">
+    <h2>Step 1: Bio Form</h2>
+    <form action="{% url 'hub' %}" method="POST">
+      {% csrf_token %}
+
+
+      <div class="form-group-group">
+        <div class="form-group">
+          <label for="Name">First Name:</label><br>
+          <input type="text" name="firstname" placeholder="John" value="{{user.first_name}}" required><br>
+        </div>
+  
+        <div class="form-group">
+          <label for="Name">Last Name:</label><br>
+          <input type="text" name="lastname" placeholder="Doe" value="{{user.last_name}}" required><br>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="Name">Phone Number</label><br>
+        <input type="number" name="phone" placeholder="" required><br>
+      </div>
+
+      <div class="form-group">
+        <label for="Email">Email</label><br>
+        <input type="email" name="email" placeholder="@example@mail.com" value="{{user.username}}" required><br>
+      </div>
+      
+      <div class="form-group-group">
+        <div class="form-group">
+          <label for="Name">Country</label><br>
+          <input type="text" name="country" placeholder="Residence" required><br>
+        </div>
+  
+        <div class="form-group">
+          <label for="Name">State</label><br>
+          <input type="text" name="state" placeholder="Province/Region" required><br>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="Name">Job/Occupation</label><br>
+        <input type="text" name="job" placeholder="Job/Skills" required><br>
+      </div>
+
+
+      <div class="form-group">
+        <label for="Name">Monthly Income</label><br>
+        <input type="text" name="income" placeholder="$" required><br>
+      </div>
+
+
+      <div class="form-group">
+        <label for="Name">Marital Status</label><br>
+        <input type="text" name="marital" placeholder="Single / Married" required><br>
+      </div>
+
+      <div class="form-group">
+        <label for="Name">Bio</label><br>
+        <input type="text" name="bio" placeholder="Tell us a little about yourself" required><br>
+      </div>
+
+      <input class="btn btn-cta" type="submit" value="Submit Profile">
+    </form>
+  </div>
+
+  <p class="small-info">We need your personal information to provide resources and oppurtunities that meets your individual/business needs. Please Note: Your Personal Information won't be shared with third party.</p>
+
+</section>
+
+{% else %}
+<div class="members">
+  <div class="trade-info">
+    <div class="trade-balance">
+      <p class="trade-type">Hub Trade</p>
+      <p class="trade-amount">$7,000.00</p>
+      <p class="trade-info-details">Members Trade</p>
+    </div>
+
+    <div class="trade-balance">
+      <p class="trade-type">Earnings</p>
+      <p class="trade-amount">$7,000.00</p>
+      <p class="trade-info-details">Weekly Profit</p>
+    </div>
+
+  </div>
+
+  <div class="info-list events">
+    <h3 class="table-heading">Events</h3>
+    <div class="info-listings">
+      No coming Up event
+    </div>
+  </div>
+
+  <div class="info-list jobs">
+    <h3 class="table-heading">Jobs</h3>
+    <div class="info-listings">
+      No coming Up event
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+<!-- <p class="dash-info">
+  Having Problem funding your account?
+  <a href="  {% url 'contact' %}
+  ">Contact Us</a>
+</p> -->
+
+
+{% endblock %}

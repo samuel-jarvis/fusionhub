@@ -1,0 +1,84 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content%}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/account.css' %}">
+</head>
+
+<h1 class="dash-heading">
+  Make Deposit
+</h1>
+
+<p class="dash-info">
+  Select and Investment Plan from below
+</p>
+
+<div class="investment-plans">
+  <div class="investment-plan">
+    <p class="plan-name">New Investor</p>
+    <div class="plan-icon">
+      <i class="bi bi-box"></i>
+    </div>
+    <div class="plan-amount">
+      <span class="dollars">$</span>500 - <span class="dollars">$</span>1000
+    </div>
+    <div class="plan-features">
+      <p>Feature</p>
+      <ul>
+        <li>7 Days Maturity</li>
+        <li>10% Return Daily</li>
+        <li>Capital Return</li>
+      </ul>
+    </div>
+    <a href="{% url 'payment' %}">Select Plan</a>
+  </div>
+  
+  <div class="investment-plan">
+    <p class="plan-name">Premium</p>
+    <div class="plan-icon">
+      <i class="bi bi-box"></i>
+    </div>
+    <div class="plan-amount">
+      <span class="dollars">$</span>1000 - <span class="dollars">$</span>5000
+    </div>
+    <div class="plan-features">
+      <p>Feature</p>
+      <ul>
+        <li style="font-weight: 500;">30% Bonus</li>
+        <li>7 Days Maturity</li>
+        <li>10% Return Daily</li>
+        <li>Capital Return</li>
+      </ul>
+    </div>
+    <a href="{% url 'payment' %}">Select Plan</a>
+  </div>
+
+  <div class="investment-plan">
+    <p class="plan-name">Business</p>
+    <div class="plan-icon">
+      <i class="bi bi-box"></i>
+    </div>
+    <div class="plan-amount">
+      <span class="dollars">$</span>5000 - <span class="dollars">$</span>10000
+    </div>
+    <div class="plan-features">
+      <p>Feature</p>
+      <ul>
+        <li>7 Days Maturity</li>
+        <li>10% Return Daily</li>
+        <li>Capital Return</li>
+      </ul>
+    </div>
+    <a href="{% url 'payment' %}">Select Plan</a>
+  </div>
+</div>
+
+<p class="dash-info">
+  Note: We also provide custom investment plans. 
+</p>
+
+
+
+{% endblock %}

@@ -1,0 +1,235 @@
+.dash-info {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+/* Investment Plans */
+.investment-plans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.investment-plan {
+  background-color: var(--bg);
+  text-align: center;
+  flex: 0 0 32%;
+  border-radius: 2rem;
+}
+
+.plan-name {
+  background-color: var(--secondary);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.2rem 0;
+  border-radius: 2rem 2rem 0 0 ;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .investment-plans {
+    display: block;
+  }
+  
+  .investment-plan {
+    margin: 2rem 0;
+  }
+  
+  
+}
+
+.plan-icon {
+  margin: 3rem 0;
+}
+
+.plan-icon .bi {
+  font-size: 5rem;
+  margin: 2rem 0;
+  color: var(--secondary);
+}
+
+.plan-amount {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.dollars {
+  font-size: 1.8rem;
+  color
+}
+
+.plan-features {
+  margin: 2rem 0;
+}
+
+.plan-features p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.plan-features li {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.investment-plan a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin: 1.5rem 0;
+  font-weight: 500;
+  border-radius: 2rem;
+  padding: 1rem 1.2rem;
+  display: inline-block;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+}
+
+/* Payment page */
+.payments {
+  background-color: var(--bg);
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.wall-add {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.copy-input {
+  margin-bottom: 2rem;
+}
+
+#myInput {
+  padding: .5rem;
+  font-family: inherit;
+  border: 1px solid var(--secondary);
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  max-width: 50rem;
+  min-width: 300px;
+  text-align: center;
+
+}
+
+#copyBtn {
+  padding: .8rem 2.5rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  background-color: var(--primary);
+  color: white;
+  margin-top: 2rem;
+  margin-left: 0rem;
+  font-family: inherit;
+  outline: none;
+  border: none;
+}
+
+/* Withdrawal Styling */
+.withdrawal-form {
+  padding: 4rem 2rem;
+  font-size: 1.8rem;
+  background-color: var(--bg);
+  margin: 4rem 0;
+  border-radius: 2rem;
+}
+
+.width-form {
+  text-align: center;
+}
+
+.width-form label {
+  display: block;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+  font-weight: 500;
+}
+
+.width-form input, .width-form select {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: .5rem;
+  font-family: inherit;
+  max-width: 40rem;
+  margin-bottom: 2rem;
+}
+
+.width-form [type=submit] {
+  /* border: 2px solid var(--secondary); */
+  /* width: fit-content; */
+  padding: .8rem;
+  margin-top: 1.5rem;
+  background-color: var(--secondary);
+  border-radius: 2rem;
+  border: none;
+  color: white;
+}
+
+
+@media only screen and (max-width: 600px){
+  .dash-info {
+    font-size: 1.6rem;
+  }
+}
+
+/* Profile styling */
+.profile {
+  /* border: 1px solid var(--secondary); */
+  padding: 2rem;
+  max-width: 60rem;
+}
+
+.profile-image {
+  background-color: var(--bg);
+  text-align: center;
+  width: 10rem;
+  margin: 2rem auto;
+  border-radius: 5rem;
+}
+
+.profile-image .bi {
+  font-size: 8rem;
+  color: var(--primary);
+}
+
+.profile-info {
+  margin: 4rem 0;
+}
+
+.profile-heading {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--primary);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.profile-info-g {
+  margin: 2rem 0;
+  background-color: var(--bg);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.profile-info-g .key {
+  font-size: 1.6rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.profile-info-g .value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--secondary);
+  /* margin: 2rem 0; */
+}

@@ -1,0 +1,8 @@
+*.sqlite3
+*.pyc
+__pycache__
+*.jpg
+*.jpeg
+*.png
+db.sqlite3
+.env

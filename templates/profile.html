@@ -1,0 +1,84 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content%}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/account.css' %}">
+</head>
+
+<h1 class="dash-heading">
+  Profile 
+</h1>
+
+<p class="dash-info">
+  Your Basic Information and Account details.
+  <br> 
+</p>
+
+<div class="profile">
+  <div class="profile-image">
+    <img src="" alt="">
+    <i class="bi bi-person-fill"></i>
+  </div>
+
+  <div class="profile-info">
+    <div class="profile-heading">Personal Info</div>
+
+    <div class="profile-info-g">
+      <p class="key">First Name</p>
+      <p class="value">{{ user.first_name}}</p>
+    </div>
+    
+    <div class="profile-info-g">
+      <p class="key">Last Name</p>
+      <p class="value">{{ user.last_name}}</p>
+    </div>
+
+    <div class="profile-info-g">
+      <p class="key">Email</p>
+      <p class="value">{{ user.username}}</p>
+    </div>
+
+    <div class="profile-info-g">
+      <p class="key">Time Joined</p>
+      <p class="value">{{ user.date_joined}}</p>
+    </div>
+
+    <div class="profile-info-g">
+      <p class="key">First Name</p>
+      <p class="value">Samuel</p>
+    </div>
+  </div>
+
+  <div class="profile-info">
+    <p class="profile-heading">Account Status</p>
+
+    <div class="profile-info-g">
+      <p class="key">Balance</p>
+      <p class="value">
+        ${% if user.balance.balance == "" %}0{% else %}{{user.balance.balance}}{% endif %}
+      </p>
+    </div>
+
+    <div class="profile-info-g">
+      <p class="key">Investment Level</p>
+      <p class="value">1000</p>
+    </div>
+
+    <div class="profile-info-g">
+      <p class="key">Account Type</p>
+      <p class="value">
+        {% if user.fusion.deposit == "" %}Investor{% else %}Fusion Member{% endif %}
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <p class="dash-info">
+  Having Problem funding your account?
+  <a href="  {% url 'contact' %}
+  ">Contact Us</a>
+</p> -->
+
+{% endblock %}

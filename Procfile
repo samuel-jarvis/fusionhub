@@ -1,0 +1,1 @@
+web: gunicorn primeinvest.wsgi --log-file -

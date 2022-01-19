@@ -1,0 +1,77 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content%}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/account.css' %}">
+  <link rel="stylesheet" href="{% static 'css/hub.css' %}">
+</head>
+
+<h1 class="dash-heading">
+  Fusion Hub Members Trade
+</h1>
+
+<!-- Not Meber of Fusion Hub -->
+<section class="Non Member">
+  <div class="fusion-join-steps">
+    <!-- <h2>Join Fusion Hub</h2> -->
+    <!-- <p class="center">Follow these 3 Simple steps to join Fusion</p> -->
+    <ol>
+      <li>Fill the Bio Form</li>
+      <li style="font-weight: bold;">Select a Fusion Hub Members Trade</li>
+      <li>Access the Hub </li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <p class="f-info-heading">Please Note</p>
+  <p class="f-info">All members of fusion hub is required to Set up a Members Trade</p>
+  <p class="f-info">The aim of setting up a trade is to earn passively while enjoying other members of Fusion Hub</p>
+  <p class="f-info">Note: This is not a payment for membership but rather a means of ensuring the financial growth of our clients.</p>
+  <p style="font-weight: 500;" class="f-info">All Traded are Insured By the Federal Reserve Board</p>
+
+</section>
+
+<div class="trade-details">
+  <h2>Trade Setup Details</h2>
+  <ul>
+    <li class="trade-detail">45% Weekly Return</li>
+    <li class="trade-detail">ROI After 48 Hours</li>
+    <li class="trade-detail">Equivalent to Local Currency</li>
+  </ul>
+
+  <div class="returnslist">
+    <h3>Amount and Returns</h3>
+    <p>$3000 - $1350</p>
+    <p>$5000 - $4500</p>
+    <p>$15000 - $6750</p>
+    <p>$20000 - $90000</p>
+  </div>
+
+  <p>Setup a custom trade 3,000 USD - 50,0000 USD</p>
+  <p style="margin-top: 2rem;">To reduce charges from International transfers all trades are managed by blockchain technology with the use of Bitcoin</p>
+</div>
+
+<div class="trade-details">
+  <p class="wall-add">Wallet Address</p>
+  <p class="code-prompt">Scan the code below or copy the address below.</p>
+  <div class="img center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/220px-QR_code_for_mobile_English_Wikipedia.svg.png" alt=""></div>
+
+  <div class="copy-input center">
+    <input type="text" value="bc1qh9v0kjh6k53k3xg04lf4asy8wd9kxwc4m0mhga" id="myInput" readonly>
+    <button onclick="copyFunction()" id="copyBtn">Copy</button>
+  </div>
+
+  <p>An Email will be sent to you upon confirmation.</p>
+</div>
+<!-- <p class="dash-info">
+  Having Problem funding your account?
+  <a href="  {% url 'contact' %}
+  ">Contact Us</a>
+</p> -->
+
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+<head>
+  <link rel="stylesheet" href="{% static 'css/pages.css' %}">
+  <link rel="stylesheet" href="{% static 'css/user.css' %}">
+</head>
+
+  <!-- Contact Us -->
+<div class="user-form">
+  <h2 class="form-header">Login to your Account</h2>
+  <form id="sign-in" method="POST" action="{% url 'signin' %}" class="account-form">
+
+    {% csrf_token%}
+
+    {% include '_alert.html' %}
+
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" id="password" required>
+    <!-- <i class="bi bi-eye" id="togglePassword"></i> -->
+
+    <input id="form-btn" type="submit" value="Sign In">
+    <p style="color: black; font-size: 1.4rem; margin-top: 10px; ">don't have an account? <a href="{% url 'signup' %}">register now</a></p>
+
+</form>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+{% endblock %}

@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d206b6bfc8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <nav class="nav">
+      <div class="nav_logo">
+        <a href="{% url 'index' %}">
+          <img src="https://i.ibb.co/wMnpyCv/fusionlogo.png" alt="fusionlogo" border="0">
+        </a>
+      </div>
+
+      <div class="nav-links">
+        <ul class="link-list">
+          <li class="closebtn"><a href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-times"></i></a></li>
+          <li class="nav-link"><a href="{% url 'index' %}">Home</a></li>
+          <li class="nav-link"><a href="{% url 'about' %}">About Us</a></li>
+          <li class="nav-link"><a href="{% url 'contact' %}">Real Estate</a></li>
+          <li class="nav-link special-link"><a href="{% url 'fusionhub' %}">Fusion Hub</a></li>
+          <li class="nav-link" ><a class="button btn-login" href="{% url 'signin' %}">Log In</a></li>
+          <li class="nav-link btn btn-cta"><a class="button" href="{% url 'signup' %}">Sign Up</a></li>
+        </ul>
+      </div>
+
+      <div class="opennav-icon">
+        <i class="fas fa-bars" onclick="openNav()"></i>
+      </div>
+    </nav>
+  </header>
+  
+
+  {% block content %} {% endblock %}
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_about">
+      <p class="name">Fusion Investment</p>
+      <p class="details">Fusion Investment is a fully certified and licensed company established in 2008. We have now become a fully functional and trusted Investment company. Fusion Investment is a company with team of experienced investors workin to offer great returns to our clients</p>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+      <h2 class="footer-heading">Quick Links</h2>
+      <ul class="footer-link-group">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        <li><a href="{% url 'fusionhub' %}">Fusion Hub</a></li>
+      </ul>
+    </div>
+
+    <!-- <div>
+      <h2 class="footer-heading">Help</h2>
+      <ul class="footer-link-group">
+        <li><a href="https://www.bbc.co.uk/newsround/25622442">What is Bitcoin</a></li>
+        <li><a href="https://paxful.com/">How to Buy Bitcoin</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        <li><a href="{% url 'signup' %}">Sign up</a></li>
+      </ul>
+    </div> -->
+
+    <div>
+      <h2 class="footer-heading footer-contact">Contact Us</h2>
+      <ul class="footer-link-group">
+        <!-- <li>47 Julia Gardens, Barking, IG11 0UL, United Kingdom</li> -->
+        <li>+1(707) 714-0377</li>
+        <li>fusioninvestments@gmail.com</li>
+        <li><a href="#" style="text-decoration: underline;">Terms of Service</a></li>
+      </ul>
+      <div class="social-links">
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright center">
+    <div class="copyright-text">Copyright 2022 Fusion Investments. All Rights Reserved</div>
+  </div>
+
+  <script src="{% static 'js/app.js' %}"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

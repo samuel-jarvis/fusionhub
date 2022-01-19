@@ -1,0 +1,81 @@
+.withdraw_group {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .withdraw_group {
+    display: block;
+    padding: 2rem 4rem;
+  }
+}
+
+.withdrawal-card {
+  /* border: 1px solid whitesmoke; */
+  padding: 2rem 4rem;
+  width: 100%;
+  margin: 2rem;
+  background-color: var(--primary-black);
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .withdrawal-card {
+    margin: 3rem auto;
+  }
+}
+
+.withdrawal-type  {
+  font-size: 2.2rem;
+  color: white;
+  margin: 2rem 0;
+
+}
+
+.with-details {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.6rem;
+  margin: 1.5rem 0rem;
+}
+
+.withdrawal-form {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+input[type=text], input[type=number] {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.5rem;  
+}
+
+label {
+  color : white;
+  font-size: 1.6rem;
+  display: block;
+  margin: 1rem 0;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: var(--primary-blue);
+  padding: 1rem 2rem;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.page-header {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}

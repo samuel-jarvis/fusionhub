@@ -1,0 +1,41 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content%}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/account.css' %}">
+</head>
+
+<h1 class="dash-heading">
+  Deposit
+</h1>
+
+<p class="dash-info">
+  Send your desired investment amount to your Fusion Bitcoin Address Below to start your investment journey.
+  <br> 
+</p>
+
+<div class="payments">
+  <p class="wall-add">Wallet Address</p>
+  <p class="code-prompt">Scan the code below or copy the address below.</p>
+  <div class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/220px-QR_code_for_mobile_English_Wikipedia.svg.png" alt=""></div>
+
+  <div class="copy-input center">
+    <input type="text" value="bc1qh9v0kjh6k53k3xg04lf4asy8wd9kxwc4m0mhga" id="myInput" readonly>
+    <button onclick="copyFunction()" id="copyBtn">Copy</button>
+  </div>
+
+  <p>Account will be Credited once Transaction is processed.</p>
+
+</div>
+
+<p class="dash-info">
+  Having Problem funding your account?
+  <a href="  {% url 'contact' %}
+  ">Contact Us</a>
+</p>
+
+
+
+{% endblock %}

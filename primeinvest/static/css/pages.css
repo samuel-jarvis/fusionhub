@@ -1,0 +1,122 @@
+.billboard2 {
+  height: 30rem;
+  background: rgb(3,17,46);
+  background-image: linear-gradient(102deg, rgba(0, 6, 18, 0.808) 0%, rgba(4, 14, 34, 0.904) 100%), url(https://images.unsplash.com/photo-1560264418-c4445382edbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+
+.bill-content {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.main-about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 8rem;
+}
+
+.main-about_image {
+  flex: 0 0 45%;
+  margin-right: 4rem;
+}
+
+.main-about_image img{
+  width: 100%;
+}
+
+
+.main-about_content {
+
+}
+.main-about_content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.main-about_content p{
+  font-size: 1.8rem;
+}
+
+.marginnn {
+  margin-right: 4rem;
+}
+
+@media only screen and (max-width: 850px){
+  .bill-content {
+    font-size: 3rem;
+  }
+
+  .main-about-section {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 4rem;
+  }
+
+  .marginnn {
+    margin-right: 0;
+  }
+
+  .main-about_image {
+    flex: 0 0 45%;
+    margin-right: 0;
+  }
+}
+
+.contact {
+  padding: 8rem 8rem;
+  background: rgb(3,17,46);
+  background-image: linear-gradient(102deg, rgba(3,21,61,1) 0%, rgb(57, 5, 148) 100%), url();
+}
+
+.contact h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.contact p {
+  color: white;
+  font-size: 1.8rem;
+  margin: 2rem 0 ;
+}
+
+.trustedby {
+  padding: 8rem;
+  background-color: var(--bg);
+}
+
+.brand-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brandimage {
+  width: 12rem;
+}
+
+.brandimage img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .trustedby {
+    padding: 6rem 2rem;
+    background-color: var(--bg);
+  }
+
+  .mt {
+    margin-top: 2rem;
+  }
+
+  .contact {
+    padding: 8rem 4rem;
+  }
+}

@@ -1,0 +1,49 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content%}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/account.css' %}">
+</head>
+
+<h1 class="dash-heading">
+  Withdrawal 
+</h1>
+
+<p class="dash-info">
+  Fill the  form below to make withdrawal to your private wallet address.
+  <br> 
+</p>
+
+{% include '_alert.html' %}
+
+<div class="withdrawal-form">  
+  <p class="wall-add">Wallet Address</p>
+
+  <form method="POST" action="{% url 'withdraw' %}" class="width-form">
+    {% csrf_token%}
+
+    {% if user.is_authenticated %}
+    <input type="hidden" name="username" value="{{ user.username }}">
+    {% endif %}
+
+    <div class="form-group">
+      <input type="text" name=amount required placeholder="Amount">
+    </div>
+
+    <div class="form-group">
+      <input type="text" name='wallet' placeholder="Bitcoin Address" required>
+    </div>
+
+    <input type="submit" value="Withdraw" name="bitcoin">
+  </form>
+</div>
+
+<p class="dash-info">
+  Withdrawals will be processed imediately.
+  <a href="  {% url 'contact' %}
+  ">Contact Us</a>
+</p>
+
+{% endblock %}

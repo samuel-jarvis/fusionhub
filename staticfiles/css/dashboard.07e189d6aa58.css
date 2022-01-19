@@ -1,0 +1,195 @@
+
+
+.dashboard {
+  padding: 1rem 4rem;
+  background-color: var(--bg-ash);
+  /* background-color: red; */
+  /* height: 100%; */
+}
+
+@media only screen and (max-width: 700px) {
+  .dashboard {
+    padding: 1rem 2rem;
+  }
+}
+
+.user {
+  color: var(--primary-blue);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .user-icon {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.user-icon .svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+.username {
+  font-size: 1.8rem;
+  margin-left: 1.5rem;
+}
+
+.dashboard-header {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--primary-blue);
+}
+
+.balance-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .balance-group {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  }
+
+.balance {
+  padding: 3rem 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  flex: 0 0 30%;
+  margin: 0 0.5rem;
+
+}
+
+@media only screen and (max-width: 500px) {
+  .balance {
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+
+  }
+}
+
+.amount-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.amount-svg {
+  height: 4.5rem;
+  fill: var(--primary-yellow);
+  display: none;
+  /* flex: 0 0 10%; */
+}
+
+.amount {
+  font-size: 3rem;
+  padding-top: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  text-align: left;
+  flex: 0 0 70%;
+}
+
+.amount-type {
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.status-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .status-group {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+}
+
+.status {
+  flex: 0 0 48%;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .status {
+    margin-bottom: 3rem;
+  }
+}
+
+.status-header {
+  font-size: 1.8rem;
+  background-color: var(--primary-blue);
+  color: white;
+  border-radius: 5rem;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.status-details {
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  margin: 2rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--primary-blue);
+  padding-left: 1rem;
+}
+
+.wallet-add {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+#myInput {
+  padding: 1rem;
+  /* display: block; */
+  /* width: 100%; */
+  font-family: inherit;
+  border: 1px solid var(--primary-yellow);
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  max-width: 50rem;
+  min-width: 300px;
+  text-align: center;
+
+}
+
+#copyBtn {
+  /* display: inline-block; */
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  /* font-weight: bold; */
+  font-size: 1.8rem;
+  text-decoration: none;
+  background-color: var(--primary-blue);
+  color: white;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-family: inherit;
+  outline: none;
+}

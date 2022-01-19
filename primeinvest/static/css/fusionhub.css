@@ -1,0 +1,236 @@
+.billboard3 {
+  height: 50rem;
+  background: rgb(3,17,46);
+  background-image: linear-gradient(102deg, rgba(0, 6, 18, 0.808) 0%, rgba(4, 14, 34, 0.904) 100%), url(https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  text-align: center;
+}
+
+.billboard-header {
+  font-size: 6.5rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.billboard-subhead {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--bg);
+}
+
+
+.padding {
+  padding: 8rem 8rem;
+}
+
+.padding1 {
+  padding: 12rem 8rem;
+}
+
+@media only screen and (max-width: 1000px){
+  .billboard-header {
+    font-size: 4rem;
+  }
+  
+  .billboard-subhead {
+    font-size: 2rem;
+  }
+  
+  
+  .padding {
+    padding: 6rem 4rem;
+  }
+  
+  .padding1 {
+    padding: 8rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .padding {
+    padding: 6rem 2rem;
+  }
+  
+  .padding1 {
+    padding: 8rem 2rem;
+  }
+
+}
+
+.about-fusion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+}
+
+.about-fusion_image {
+  flex: 0 0 40%;
+  /* border: 3px solid var(--primary); */
+  border-radius: 4rem 0 4rem 0;
+  margin-right: 4rem;
+}
+
+.about-fusion_image img {
+  width: 100%;
+  height: 45rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4rem 0 4rem 0;
+  
+}
+
+.about-fusion_text .minor-heading {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.about-fusion_text h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.about-fusion_text p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+@media only screen and (max-width: 450px) {
+  
+  .about-fusion {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg);
+  }
+
+  .about-fusion_image {
+    border-radius: 1rem 0 1rem 0;
+    margin-top: 2rem;
+    height: 35rem;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .about-fusion_text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--primary);
+  }
+  
+  .about-fusion_text p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+}
+
+/* Second about section copied from the main home page */
+.about-card {
+  background-color: var(--bg);
+  background-color: var(--primary);
+  padding: 2rem;
+  border-radius: 0;
+  flex: 0 0 23%;
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+.card-icon {
+  background-color: transparent;
+  display: inline-block;
+  border-radius: 4rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: none;
+}
+
+.card-heading {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+  color: var(--primary);
+  color: var(--accent);
+  color: white;
+}
+
+.card-details {
+  font-size: 1.8rem;
+  color: var(--text);
+  color: white;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.about-cards {
+  margin-top: 6rem;
+}
+
+/* Second fusion hub about */
+.fusion-mission {
+  margin-top: 2rem;
+}
+
+.fusion-mission li{
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.fusion-mission {
+  margin-top: 2rem;
+}
+
+
+.fusion-pitch_img img {
+  width: 100%;
+}
+
+/* The material background */
+.contact-fusion {
+  margin: 8rem;
+  background-color: var(--primary);
+  background-image: url(https://jenfi.com/wp-content/uploads/2021/03/Frame.png);
+  padding: 6rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+
+.contact-fusion h1{
+  font-size: 5rem;
+  color: white;
+}
+
+.contact-fusion p {
+  margin: 3rem 0;
+  font-size: 2.4rem;
+  color: var(--accent);
+  color: white;
+}
+
+.contact-fusion a {
+  color: black;
+  background-color: var(--accent);
+}
+
+@media only screen and (max-width: 450px) {
+  .contact-fusion {
+    margin: 6rem 2rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+  }
+}

@@ -1,0 +1,114 @@
+.nav {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  padding-top: 5rem;
+  width: 25rem;
+  background-color: var(--primary-blue);
+  padding: 5rem 1rem 0 2rem;
+}
+
+
+.nav-links li {
+  display: block;
+  font-size: 2rem;
+  padding-right: 2rem;
+
+}
+
+.nav-links ul, .nav-links li {
+  display: block;
+  padding: 2rem 0; 
+  padding-left: 1rem;
+}
+
+.nav-links a {
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.ul .nav-link {
+  display: flex;
+}
+
+.nav-links .link-group {
+  display: flex;
+  align-items: center;
+}
+
+.link-group svg {
+  color: white;
+  width: 2rem;
+}
+
+.main-section {
+  padding-left: 25rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #menuButton {
+    display: block;
+  }
+
+
+  .nav-links .closebtn {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: 2rem;
+  }
+
+  .navss {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: var(--secondary-blue); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 60px 0; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  .nav {
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding-top: 10rem;
+    padding: 5rem 1rem 0 2rem;
+    width: 0rem;
+    padding: 0;
+    transition: 0.3s;
+  }
+
+  .nav-links a {
+    color: white;
+  }
+
+  
+  .main-section {
+    padding-left: 0;
+  }
+}
+
+#menuButton {
+  display: block;
+  font-size: 2rem;
+  color: var(--primary-blue);
+}
+
+@media only screen and (max-width: 800px) {
+  .opennav {
+    width: 28rem;
+    padding: 5rem 1rem 0 2rem;
+  }
+}
+
