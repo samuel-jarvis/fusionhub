@@ -146,7 +146,6 @@ def withdraw(request):
         if request.method == 'GET':
             return render(request, 'withdraw.html')
 
-
         if request.method == 'POST' and 'bitcoin' in request.POST:
             amount = request.POST['amount']
             wallet = request.POST['wallet']
@@ -168,7 +167,7 @@ def withdraw(request):
 
             withdraw.save()
             
-            messages.success(request, 'Withdrawal Processing')
+            messages.success(request, 'Withdrawal Processing, You\'ll receive an  Email Shortly')
             return render(request, 'withdraw.html')
 
     else:

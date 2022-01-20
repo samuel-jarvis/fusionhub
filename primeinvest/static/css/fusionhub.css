@@ -234,3 +234,18 @@
     border-radius: 2rem;
   }
 }
+
+.testimonies-card video {
+  width: 100%;
+}
+
+.testimonies-name {
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 600px){
+  .testimonials-groups {
+    display: block;
+    margin-top: 8rem;
+  }
+}

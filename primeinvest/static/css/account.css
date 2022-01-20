@@ -135,6 +135,29 @@
 }
 
 /* Withdrawal Styling */
+.with-balances {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-box {
+  padding: 2rem;
+  flex: 0 0 48%;
+  background-color: var(--bg);
+}
+
+.balance-box-type {
+  font-size: 1.8rem;
+  color: var(--secondary);
+}
+
+.balance-box-amount {
+  font-size: 2.8rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
 .withdrawal-form {
   padding: 4rem 2rem;
   font-size: 1.8rem;
@@ -179,6 +202,15 @@
 @media only screen and (max-width: 600px){
   .dash-info {
     font-size: 1.6rem;
+  }
+
+  .with-balances {
+    display: block;
+    justify-content: space-between;
+  }
+  
+  .balance-box {
+    margin: 2rem 0;
   }
 }
 

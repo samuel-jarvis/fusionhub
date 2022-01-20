@@ -17,7 +17,19 @@
 </p>
 
 {% include '_alert.html' %}
+<div class="with-balances">
+  <div class="balance-box">
+    <p class="balance-box-type">Available Balance</p>
+    <p class="balance-box-amount">
+      ${% if user.balance.balance == "" %}0{% else %}{{user.balance.balance}}{% endif %}
+    </p>
+  </div>
 
+  <div class="balance-box">
+    <p class="balance-box-type">Withdrawal Fee</p>
+    <p class="balance-box-amount">0</p>
+  </div>
+</div>
 <div class="withdrawal-form">  
   <p class="wall-add">Wallet Address</p>
 

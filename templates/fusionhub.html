@@ -82,7 +82,7 @@
   <div class="about-fusion_text">
     <p class="minor-heading">Our Mission</p>
     <h2>What we're  about?</h2>
-    <p>At Fusion Hub we aim to revolutionize how Talents and business connect and help you to achieve inancial goals. We were developed out tof the necessity for a platform that helps our members grow and connect.</p>
+    <p>At Fusion Hub we aim to revolutionize how Talents and business connect and help you to achieve financial goals. We were developed out of the necessity for a platform that helps our members grow and connect.</p>
     <ul class="fusion-mission">
       <li>Connect our Members</li>
       <li>Help You get financial stability</li>
@@ -125,7 +125,7 @@
     </div>
   </div>
   
-  <a href="#" class="btn btn-cta">Get Started!</a>
+  <a href="{% url 'signin' %}" class="btn btn-cta">Get Started!</a>
 </section>
 
 <section class="testimonials">
@@ -135,27 +135,27 @@
   </div>
   <div class="testimonials-groups">
     <div class="testimonies-card" data-aos="fade-up" data-aos-duration="500" >
-      <div class="testimonies-image">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
-      </div>
-      <p class="testimonies-name">Patricia J. Cornell</p>
-      <p class="testimonies-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta eos asperiores suscipit a provident rem, amet delectus corrupti officia ab accusantium vel!</p>
+      <video  controls>
+        <source src="{% static 'images/kurt.mp4' %}" type="video/mp4">
+       Your browser does not support the video tag.
+      </video>
+      <p class="testimonies-name">Kurt Tarrach</p> 
+    </div>
+
+    <div class="testimonies-card" data-aos="fade-up" data-aos-duration="500">x
+      <video  controls>
+        <source src="{% static 'images/hailangchan.mp4' %}" type="video/mp4">
+       Your browser does not support the video tag.
+      </video>
+      <p class="testimonies-name">Hai Lang Chan</p>
     </div>
 
     <div class="testimonies-card" data-aos="fade-up" data-aos-duration="500">
-      <div class="testimonies-image">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
-      </div>
-      <p class="testimonies-name">Patricia J. Cornell</p>
-      <p class="testimonies-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta eos asperiores suscipit a provident rem, amet delectus corrupti officia ab accusantium vel!</p>
-    </div>
-
-    <div class="testimonies-card" data-aos="fade-up" data-aos-duration="500">
-      <div class="testimonies-image">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-      </div>
-      <p class="testimonies-name">Patricia J. Cornell</p>
-      <p class="testimonies-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta eos asperiores suscipit a provident rem, amet delectus corrupti officia ab accusantium vel!</p>
+      <video  controls>
+        <source src="{% static 'images/gabriel.mp4' %}" type="video/mp4">
+       Your browser does not support the video tag.
+      </video>
+      <p class="testimonies-name">Gabriel Min</p>
     </div>
   </div>
 </section>
@@ -167,13 +167,13 @@
   <div class="fusion-pitch_img">
     <img src="https://leo-brokerage.com/media/map.png" alt="">
   </div>
-  <a href="#" class="btn btn-cta">Join Fusion Hub</a>
+  <a href="{% url 'signup' %}" class="btn btn-cta">Join Fusion Hub</a>
 </section>
 
 <section class="contact-fusion">
   <h1 class="center" data-aos="fade-up" data-aos-duration="1000">Need More Info Contact Us</h1>
   <p class="center" data-aos="fade-up" data-aos-duration="1000">Have more questions regarding Fusion Hub?. React out to us now. And Speak to our Support.</p>
-  <a href="#" class="btn btn-main center" data-aos="fade-up" data-aos-duration="2000">Contact Us</a>
+  <a href="{% url 'contact' %}" class="btn btn-main center" data-aos="fade-up" data-aos-duration="2000">Contact Us</a>
 </section>
 
 

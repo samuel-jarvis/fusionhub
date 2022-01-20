@@ -105,14 +105,26 @@
 <div class="members">
   <div class="trade-info">
     <div class="trade-balance">
-      <p class="trade-type">Hub Trade</p>
-      <p class="trade-amount">$7,000.00</p>
+      <p class="trade-type"> Trade Capital</p>
+      <p class="trade-amount">
+        ${{user.fusion.capital}}
+      </p>
       <p class="trade-info-details">Members Trade</p>
     </div>
 
     <div class="trade-balance">
-      <p class="trade-type">Earnings</p>
-      <p class="trade-amount">$7,000.00</p>
+      <p class="trade-type">Trade Profit</p>
+      <p class="trade-amount">
+        ${{user.fusion.profit}}
+      </p>
+      <p class="trade-info-details">Weekly Profit</p>
+    </div>
+
+    <div class="trade-balance">
+      <p class="trade-type">Balance</p>
+      <p class="trade-amount">
+        ${{user.fusion.capital}}
+      </p>
       <p class="trade-info-details">Weekly Profit</p>
     </div>
 

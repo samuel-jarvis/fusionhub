@@ -38,6 +38,7 @@ class Balance(models.Model):
     balance = models.IntegerField(blank=True, default='0',)
     deposit = models.IntegerField(blank=True, default='0',)
     earning = models.IntegerField(blank=True, default='0',)
+    fee = models.IntegerField(blank=True, default='0',)
     deposit_date = models.DateTimeField(auto_now_add=True)
     username = models.CharField(max_length=100, blank=True, default='username',)
 
@@ -58,8 +59,10 @@ class Transaction(models.Model):
 
 class Fusion(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    deposit = models.IntegerField(blank=True)
-    profit = models.TextField(max_length=100)
+    capital = models.IntegerField(blank=True, default='0',)
+    profit = models.IntegerField(blank=True, default='0',)
+    balance = models.IntegerField(blank=True, default='0',)
+    # fee = models.IntegerField(blank=True)
     status = models.BooleanField()
     username = models.CharField(max_length=100, blank=True, default='username',)
 
