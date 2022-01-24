@@ -27,7 +27,7 @@
 
   <div class="balance-box">
     <p class="balance-box-type">Withdrawal Fee</p>
-    <p class="balance-box-amount">0</p>
+    <p class="balance-box-amount">${% if user.balance.balance == "" %}0{% else %}{{user.balance.fee}}{% endif %}</p>
   </div>
 </div>
 <div class="withdrawal-form">  

@@ -62,21 +62,21 @@ WSGI_APPLICATION = 'primeinvest.wsgi.application'
 # # Database
 # # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'fusionhub',
-#         'USER': 'postgres',
-#         'PASSWORD': 'operator',
-#         'HOST': 'localhost'
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'fusionhub',
+        'USER': 'postgres',
+        'PASSWORD': 'operator',
+        'HOST': 'localhost'
+    }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=config('DATABASE_URL')
+#     )
+# }
 
 
 # Password validation
