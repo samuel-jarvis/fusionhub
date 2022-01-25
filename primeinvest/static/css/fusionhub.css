@@ -248,4 +248,8 @@
     display: block;
     margin-top: 8rem;
   }
+
+  .testimonies-card {
+    margin: 3rem 0;
+  }
 }
