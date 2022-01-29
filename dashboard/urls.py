@@ -14,6 +14,7 @@ urlpatterns = [
   path('profile', views.profile, name='profile'),
   path('hub', views.hub, name='hub'),
   path('fusionform', views.fusionform, name='fusionform'),
+  path('tradedetails', views.tradedetails, name='trade-details'),
   path('hubtrade', views.hubtrade, name='hub-trade'),
   path('logout', views.logout, name='logout'),
 ]

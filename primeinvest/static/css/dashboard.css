@@ -197,7 +197,18 @@ header {
   /* margin-top: 1rem; */
 }
 
+.dash-logo  {
+  display: none;
+}
+
 @media only screen and (max-width: 1000px) {
+  
+.link-list {
+  display: block;
+  /* flex-direction: column; */
+  margin-top: 2.5rem;
+}
+
   .nav_logo {
     width: 0;
     margin-top: 4rem;
@@ -227,6 +238,20 @@ header {
   .dash-heading {
     font-size: 1.8rem;
   }
+
+  .dash-logo {
+    display: block;
+    width: 16rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+
+
+
+  .dash-logo img{
+    width: 100%;
+  }
+  
 }
 
 /* Balances */

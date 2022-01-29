@@ -34,6 +34,12 @@
         </div>
 
         <ul class="link-list">
+          <div class="dash-logo">
+            <a href="{% url 'index' %}">
+              <img src="https://i.ibb.co/wMnpyCv/fusionlogo.png" alt="fusionlogo" border="0">
+            </a>
+          </div>
+
           {% url 'dashboard' as url %}
           <li class="nav-link {% if request.path == url %}active{% endif %}">
             <i class="bi bi-speedometer2"></i> <a href="{% url 'dashboard' %}">Dashboard</a>

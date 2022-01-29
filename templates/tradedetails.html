@@ -1,0 +1,44 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content%}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/account.css' %}">
+  <link rel="stylesheet" href="{% static 'css/hub.css' %}">
+</head>
+
+<h1 class="dash-heading">
+  Benefits of Fusion Hub 
+</h1>
+
+<!-- Not Meber of Fusion Hub -->
+<section class="non-members">
+  <p class="dash-info">
+    You are not a Member of Fusion Hub.
+    <a href="{% url 'fusionhub' %}">What is Fusion Hub?</a>
+    <br> 
+  </p>
+
+  <!-- <div class="fusion-join-steps">
+    <p>Folow these 3 Simple steps to join Fusion</p>
+    <ol>
+      <li style="font-weight: bold;">Fill the Bio Form</li>
+      <li>Select a Fusion Hub Active Plan</li>
+      <li>Access the Hub </li>
+    </ol>
+  </div> -->
+
+
+  <p class="small-info">We need your personal information to provide resources and oppurtunities that meets your individual/business needs. Please Note: Your Personal Information won't be shared with third party.</p>
+
+</section>
+
+<!-- <p class="dash-info">
+  Having Problem funding your account?
+  <a href="  {% url 'contact' %}
+  ">Contact Us</a>
+</p> -->
+
+
+{% endblock %}

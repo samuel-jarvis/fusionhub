@@ -48,6 +48,12 @@ def hubtrade(request):
     else:
         return redirect('signin')
 
+def tradedetails(request):
+    if request.user.is_authenticated:
+        return render(request, 'tradedetails.html')
+    else:
+        return redirect('signin')
+
 def fusionform(request):
     if hasattr(request.user, 'hubrequest'):
         return render(request, 'hubtrade.html')
@@ -70,7 +76,7 @@ def fusionform(request):
             hubrequest.user = request.user
             hubrequest.save()
             
-            return redirect('hub-trade')
+            return redirect('tradedetails')
             
 
 def hub(request):
